@@ -16,7 +16,7 @@ class GraphAlg:
             nx.draw_shell(G, node_color=colors[i], with_labels=True)
         if animate:
             plt.show(block=False)
-            plt.pause(0.25)
+            plt.pause(1)
             plt.close()
         else:
             plt.show(block=True)
@@ -33,7 +33,7 @@ class GraphAlg:
         nx.draw_shell(G, node_color=['orange' if node in visited else 'pink' for node in G], with_labels=True)
         if animate:
             plt.show(block=False)
-            plt.pause(0.25)
+            plt.pause(1)
             plt.close()
         else:
             plt.show(block=True)
